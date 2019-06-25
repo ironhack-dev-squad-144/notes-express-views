@@ -1,42 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<h1>Find your Barber Shop</h1>
+<p>
+  The current time is {{hours}}:{{minutes}}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>I love moustachem</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-
-<body>
-  <nav>
-    <img src="/images/mustache.png" alt="">
-    <div class="links">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-    </div>
-  </nav>
-  <main>
-    <h1>Find your Barber Shop</h1>
-    <p>
-      The current time is {{hours}}:{{minutes}}
-
-      {{!-- Condition: it has to be simple, with a boolean --}}
-      {{#if isDaylight}}
-      ☀️
-      {{else}}
-      🌙
-      {{/if}}
-    </p>
-    <p>We have shops in the following cities:</p>
-    <ul>
-      {{#each cities}}
-      <li>{{@index}} {{this}}</li>
-      {{/each}}
-    </ul>
-    <p>The first city is: {{cities.[0]}}</p>
-  </main>
-</body>
-
-</html>
+  {{!-- Condition: it has to be simple, with a boolean --}}
+  {{#if isDaylight}}
+  ☀️
+  {{else}}
+  🌙
+  {{/if}}
+</p>
+<p>We have shops in the following cities:</p>
+<ul>
+  {{#each cities}}
+  <li>{{@index}} {{this}}</li>
+  {{/each}}
+</ul>
+<p>The first city is: {{cities.[0]}}</p>

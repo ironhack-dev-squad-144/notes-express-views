@@ -26,6 +26,13 @@ app.get("/", (req, res, next) => {
   });
 });
 
+
+// Route "/about" (http://localhost:3000/about)
+app.get("/about", (req, res, next) => {
+  // Render the view "/views/about.hbs"
+  res.render("about");
+});
+
 app.listen(3000, () => {
   console.log("App running on http://localhost:3000");
 });
