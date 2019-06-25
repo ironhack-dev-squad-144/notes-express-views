@@ -19,11 +19,23 @@
   </nav>
   <main>
     <h1>Find your Barber Shop</h1>
-    <p>The current hour is HH:MM ☀️🌙</p> 
+    <p>
+      The current time is {{hours}}:{{minutes}}
+
+      {{!-- Condition: it has to be simple, with a boolean --}}
+      {{#if isDaylight}}
+      ☀️
+      {{else}}
+      🌙
+      {{/if}}
+    </p>
     <p>We have shops in the following cities:</p>
     <ul>
-      <li>Lisbon</li>
+      {{#each cities}}
+      <li>{{@index}} {{this}}</li>
+      {{/each}}
     </ul>
+    <p>The first city is: {{cities.[0]}}</p>
   </main>
 </body>
 
