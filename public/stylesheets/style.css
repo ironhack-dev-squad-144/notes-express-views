@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #282b35;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+
+nav {
+  background-color: #1b1d24;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+}
+
+main {
+  padding: 10px;
+}
